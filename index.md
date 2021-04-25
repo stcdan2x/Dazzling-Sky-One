@@ -13,10 +13,10 @@
             <h1 class="logo"><a href="index.html">Dazzling Sky</a></h1>
             
             <ul>
-                <li><a href="#" class="current"><b>Home</b></a></li>
-                <li><a href="#"><b>About</b></a></li>
-                <li><a href="#"><b>Services</b></a></li>
-                <li><a href="#"><b>Contact</b></a></li>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         
         </div>
