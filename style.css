@@ -346,10 +346,6 @@
   z-index: 2;
 }
 
-.main_btn a:hover  {
-  color: black;
-}
-
 .main_btn:after  {
   position: absolute;
   content: "";
@@ -362,8 +358,8 @@
   border-radius: 4px;
 }
 
-.main_btn:hover {
-  color: white;
+.main_btn:hover a {
+  color: rgb(0, 0, 0);
 }
 
 .main_btn:hover:after {
