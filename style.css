@@ -269,7 +269,7 @@
   color: antiquewhite;
   margin-bottom: 24px;
   background: #ffe522;  /* fallback for old browsers */
-  transform: translateX(40%);
+  transform: translateX(10%);
   transition: all 1s ease;
   opacity: 0;
   -webkit-text-stroke: #131313 1px;
@@ -314,13 +314,27 @@
 }
 
 @media screen and (max-width: 768px)  {
-  .hero_heading {
+/*   .hero_heading {
     font-size: 60px;
-  }
+  } */
 
   .hero_description {
-    font-size: 40px;
+    font-size: 30px;
   }
+
+  .hero_wrapper {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 0 0;
+  }
+
+  .standout {
+    margin: 0;
+  }
+
 }
 
 .main {
@@ -812,4 +826,6 @@
     width: 100%;
   }
 }
+
+
 
