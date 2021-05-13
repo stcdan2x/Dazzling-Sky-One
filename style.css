@@ -260,6 +260,7 @@
   transform: translateY(80%);
   transition: all 1s ease;
   opacity: 0;
+  -webkit-text-stroke: #131313 1px;
 }
 
 .hero_description {
@@ -271,6 +272,7 @@
   transform: translateX(40%);
   transition: all 1s ease;
   opacity: 0;
+  -webkit-text-stroke: #131313 1px;
 }
 
 .movein {
