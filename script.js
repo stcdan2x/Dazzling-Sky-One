@@ -1,3 +1,18 @@
+window.onload = () => {
+  const mainBtn = document.querySelector(".main_btn"),
+        heroDesc = document.querySelector(".hero_description"),
+        heroRight = document.querySelector(".standout"),
+        heroLeft = document.querySelector(".hero_heading");
+  const insertLeft = () => heroLeft.classList.add("movein2"),
+        insertRight = () => heroRight.classList.add("movein"),
+        insertLine = () => heroDesc.classList.add("movein3"),
+        showBtn = () => mainBtn.classList.add("movein4");
+  setTimeout(insertLeft, 100);
+  setTimeout(insertRight, 900);
+  setTimeout(insertLine, 1900);
+  setTimeout(showBtn, 3000);
+}
+
 const mobNavi = document.querySelector("#mobile_menu"); //for mobile menu cross/hbar
 const menuLinks = document.querySelector(".navbar_menu"); //mobile menu container and elems
 const navLogo = document.querySelector("#navbar_logo"); // main logo
@@ -61,80 +76,3 @@ mobNavi.addEventListener("click", toggleMobMenu);
 menuLinks.addEventListener("click", dismissMenu);
 navLogo.addEventListener("click", dismissMenu);
 
-const mainBtn = document.querySelector(".main_btn"),
-      heroDesc = document.querySelector(".hero_description"),
-      heroRight = document.querySelector(".standout"),
-      heroLeft = document.querySelector(".hero_heading");
-document.addEventListener("DOMContentLoaded", () => {
-  const insertLeft = () => heroLeft.classList.add("movein2"),
-        insertRight = () => heroRight.classList.add("movein"),
-        insertLine = () => heroDesc.classList.add("movein3"),
-        showBtn = () => mainBtn.classList.add("movein4");
-  setTimeout(insertLeft, 100);
-  setTimeout(insertRight, 900);
-  setTimeout(insertLine, 1900);
-  setTimeout(showBtn, 3000);
-});
-
-
-
-
-/* const scrollFun = () => {
-  let scrollVal = window.scrollY;
-  console.log(scrollVal);
-}
-
-window.addEventListener("scroll", scrollFun); */
-
-
-
-
-
-//Reveal Mobile Navigation Menu
-
-/* const mobMenu = () => {
-  mobNavi.classList.toggle("active2");
-  menuLinks.classList.toggle("active");
-}
-
-mobNavi.addEventListener("click", mobMenu);
-
-const hlNav = () => {
-  const hlSelect = document.querySelector(".hilite");
-  const hlHome = document.querySelector("#home_link");
-  const hlAbout = document.querySelector("#about_link");
-  const hlProducts = document.querySelector("#products_link");
-  
-  let scrollCoord = window.scrollY;
-  if(window.innerWidth > 960 && scrollCoord < 600)  {
-    hlHome.classList.add("hilite");
-    hlAbout.classList.remove("hilite");
-  } else if(window.innerWidth > 960 && scrollCoord < 1400) {
-    hlAbout.classList.add("hilite");
-    hlHome.classList.remove("hilite");
-    hlProducts.classList.remove("hilite");
-  } else if(window.innerWidth > 960 && scrollCoord < 2345) {
-    hlProducts.classList.add("hilite");
-    hlAbout.classList.remove("hilite")
-  }
-
-  if ((hlSelect && window.innerWidth <= 960) || hlSelect) {
-    elem.classList.remove("hilite");
-  }
-}
-
-window.addEventListener("scroll", hlNav);
-window.addEventListener("click", hlNav);
-
-
-
-const hideMobMenu = () => {
-  const mobMenuBar = document.querySelector(".active2");
-  if(mobMenuBar && window.innerWidth <= 960) {
-    menuLinks.classList.remove("active");
-    mobMenuBar.classList.remove("active2");
-  }
-}
-
-menuLinks.addEventListener("click", hideMobMenu);
-navLogo.addEventListener("click", hideMobMenu); */
