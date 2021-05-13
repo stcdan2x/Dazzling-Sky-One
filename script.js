@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
         insertLine = () => heroDesc.classList.add("movein3"),
         showBtn = () => mainBtn.classList.add("movein4");
   setTimeout(insertLeft, 100);
-  setTimeout(insertRight, 500);
-  setTimeout(insertLine, 1500);
+  setTimeout(insertRight, 900);
+  setTimeout(insertLine, 1900);
   setTimeout(showBtn, 3000);
 });
 
