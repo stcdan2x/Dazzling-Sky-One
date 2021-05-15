@@ -294,13 +294,18 @@
   transition: all 1s ease;
 }
 
-.main_container .dist_container {
+/* .main_container .dist_container {
   display: flex;
   padding: 0;
   margin: 0;
   justify-content: flex-end;
   align-items: center;
 }
+
+.main_container .dist_content{
+  margin: 0;
+  padding: 0;
+} */
 
 .main_content {
   color: wheat;
@@ -899,6 +904,19 @@
     font-size: 4rem;
   }
 
+  .main_container .dist_container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .main_container .dist_content{
+    margin: 0;
+    padding: 0;
+  }
+
   .main_content h1 {
     font-size: 2rem;
     margin-top: 1rem;
@@ -936,6 +954,7 @@
   }
 
 }
+
 
 
 
