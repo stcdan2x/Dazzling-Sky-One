@@ -267,7 +267,6 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
 }
 
 #about::before {
@@ -295,11 +294,13 @@
   transition: all 1s ease;
 }
 
-/* #distributor {
+.main_container .dist_container {
   display: flex;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
   align-items: center;
-} */
+}
 
 .main_content {
   color: wheat;
@@ -394,6 +395,11 @@
 
 .main_img_container {
   text-align: center;
+}
+
+.about_btn,
+.dist_btn   {
+  opacity: 1;
 }
 
 .main_img_card  {
@@ -911,6 +917,10 @@
     margin: 2.5rem 0;
   }
 
+  .dist_container {
+    margin: 0;
+  }
+
   .products {
     padding: 100px 0 0 0;
   }
@@ -926,5 +936,6 @@
   }
 
 }
+
 
 
