@@ -1,12 +1,16 @@
 window.onload = () => {
   const mainBtn = document.querySelector(".main_btn"),
-        heroDesc = document.querySelector(".hero_description"),
-        heroRight = document.querySelector(".standout"),
-        heroLeft = document.querySelector(".hero_heading");
+      heroDesc = document.querySelector(".hero_description"),
+      heroRight = document.querySelector(".standout"),
+      heroLeft = document.querySelector(".hero_heading"),
+      heroImg = document.querySelector(".hero_image");
+  //for initial text animation
   const insertLeft = () => heroLeft.classList.add("movein2"),
         insertRight = () => heroRight.classList.add("movein"),
         insertLine = () => heroDesc.classList.add("movein3"),
-        showBtn = () => mainBtn.classList.add("movein4");
+        showBtn = () => mainBtn.classList.add("movein4"),
+        enlargeHero = () => heroImg.classList.add("zoomin");
+  setTimeout(enlargeHero, 100);
   setTimeout(insertLeft, 100);
   setTimeout(insertRight, 900);
   setTimeout(insertLine, 1900);
@@ -75,4 +79,23 @@ mobNavi.addEventListener("click", toggleMobMenu);
 //dismiss mobile dropdown / floating menu
 menuLinks.addEventListener("click", dismissMenu);
 navLogo.addEventListener("click", dismissMenu);
+
+const triggerPoint = 480,
+      triggerPoint2 = 1320,
+      triggerPoint3 = 2240;
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+  currentScrollPos < triggerPoint || currentScrollPos > 120 ?
+  opacity = currentScrollPos / triggerPoint : opacity = 1;
+
+  currentScrollPos < triggerPoint2 || currentScrollPos > 1000 ?
+  opacity2 = (currentScrollPos - 940) / (triggerPoint2 - 940) : opacity2 = 1;
+
+  currentScrollPos < triggerPoint3 || currentScrollPos > 2000 ?
+  opacity3 = (currentScrollPos - 1760) / (triggerPoint3 - 1760) : opacity3 = 1;
+
+  document.querySelector(".reveal").style.opacity = opacity;
+  document.querySelector(".products_wrapper").style.opacity = opacity2;
+  document.querySelector(".reveal3").style.opacity = opacity3;
+});
 
